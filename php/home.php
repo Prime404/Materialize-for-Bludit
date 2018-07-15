@@ -41,26 +41,13 @@
 
     </div>
 </div>
-
 <?php endforeach ?>
 
-<!-- Pagination -->
-<?php if (Paginator::amountOfPages()>1) : ?>
-<ul class="pagination">
 <?php
-// Previous button
-if (!Paginator::showPrev()) {
-    echo '<a class="pagination-previous" disabled>« ' . $Language->get('Previous') . '</a>';
-} else {
-    echo '<a class="pagination-previous" href="' . Paginator::prevPageUrl() .'">« ' . $Language->get('Previous') . '</a>';
-}
-
-// Next button
-if (!Paginator::showNext()) {
-    echo '<a class="pagination-next" disabled>' . $Language->get('Next') . ' »</a>';
-} else {
-    echo '<a class="pagination-next" href="' . Paginator::nextPageUrl() .'">' . $Language->get('Next') . ' »</a>';
-}
+    if(Paginator::showPrev()) {
+        echo '<a class="btn btn-secondary left" href="'.Paginator::prevPageUrl().'">&larr; '.$Language->get('Previous page').'</a>';
+    }
+    if(Paginator::showNext()) {
+        echo '<a class="btn btn-secondary right" href="'.Paginator::nextPageUrl().'">'.$Language->get('Next page').' &rarr;</a>';
+    }
 ?>
-</ul>
-<?php endif ?>
