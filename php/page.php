@@ -12,20 +12,20 @@
     <?php endif ?>
 
     <div class="card-content">
-        <!-- Title -->
-        <a href="<?php echo $page->permalink(); ?>">
-          <h1 class="card-title grey-text text-darken-4"><?php echo $page->title(); ?></h1>
-        </a>
+      <!-- Title -->
+      <a href="<?php echo $page->permalink(); ?>">
+        <h1 class="card-title grey-text text-darken-4"><?php echo $page->title(); ?></h1>
+      </a>
 
-        <?php if (!$page->isStatic() && !$Url->notFound()) : ?>
-          <!-- Creation date -->
-          <h6>Posted on: <?php echo $page->date(); ?></h6>
-        <?php endif ?>
+      <?php if (!$page->isStatic() && !$Url->notFound()) : ?>
+        <!-- Creation date -->
+        <h6>Posted on: <?php echo $page->date(); ?></h6>
+      <?php endif ?>
 
-        <hr>
+      <hr>
 
-        <!-- Full content -->
-        <?php echo $page->content(); ?>
+      <!-- Full content -->
+      <?php echo $page->content(); ?>
     </div>
   </div>
 
