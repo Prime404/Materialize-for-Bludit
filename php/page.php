@@ -14,7 +14,7 @@
     <div class="card-content">
       <!-- Title -->
       <a href="<?php echo $page->permalink(); ?>">
-        <h1 class="card-title grey-text text-darken-4"><?php echo $page->title(); ?></h1>
+        <span class="card-title grey-text text-darken-4"><?php echo $page->title(); ?></span>
       </a>
 
       <?php if (!$page->isStatic() && !$Url->notFound()) : ?>
