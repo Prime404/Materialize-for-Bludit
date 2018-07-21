@@ -2,22 +2,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Bludit CMS">
 
-<!--Import Google Icon Font-->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-<!-- Jquery  -->
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
 <!-- Dynamic title tag -->
 <?php echo Theme::headTitle(); ?>
 
 <!-- Dynamic description tag -->
 <?php echo Theme::headDescription(); ?>
 
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- Jquery  -->
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+
 <!-- Favicon -->
 <?php echo Theme::favicon('img/favicon.png'); ?>
 
-<!-- CSS: Bulma -->
+<!-- CSS: Materialize -->
 <?php echo Theme::css('css/materialize.min.css'); ?>
 
 <!-- CSS: Styles for this theme -->
