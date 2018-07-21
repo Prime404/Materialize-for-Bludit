@@ -1,15 +1,19 @@
-<nav class="grey darken-4">
-    <div class="container">
-        <a class="brand-logo left" href="<?php echo $site->url() ?>">
-            <?php echo $site->title() ?>
-        </a>
-        
-        <ul id="nav-mobile" class="right">
-            <li><a href="<?php echo $site->url() ?>">Home</a></li>
-            <!-- Static pages -->
-            <?php foreach ($staticContent as $staticPage) : ?>
-                <li><a href="<?php echo $staticPage->permalink() ?>"><?php echo $staticPage->title() ?></a></li>
-            <?php endforeach ?>
-        </ul>
-    </div>
+<nav>
+  <div class="nav-wrapper grey darken-4">
+  <div class="container">
+    <a href="<?php echo $site->url() ?>" class="brand-logo"><?php echo $site->title() ?></a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <?php foreach ($staticContent as $staticPage) : ?>
+        <li><a href="<?php echo $staticPage->permalink() ?>"><?php echo $staticPage->title() ?></a></li>
+      <?php endforeach ?>
+    </ul>
+  </div>
+  </div>
 </nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <?php foreach ($staticContent as $staticPage) : ?>
+    <li><a href="<?php echo $staticPage->permalink() ?>"><?php echo $staticPage->title() ?></a></li>
+  <?php endforeach ?>
+</ul>

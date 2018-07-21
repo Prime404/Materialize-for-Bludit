@@ -9,7 +9,3 @@ Bludit with a taste of material design
 
 # Tips:
 * If you would like to remove the default theme search box in the sidebar, remove the search form in `sidebar.php`
-
-# Credits:
-* anaggh for Bluma - https://github.com/anaggh/bluma
-* http://materializecss.com

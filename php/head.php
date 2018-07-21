@@ -5,6 +5,9 @@
 <!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+<!-- Jquery  -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 <!-- Dynamic title tag -->
 <?php echo Theme::headTitle(); ?>
 
@@ -22,6 +25,9 @@
 
 <!-- JS: Scripts for this theme -->
 <?php echo Theme::js('js/materialize.min.js'); ?>
+
+<!-- JS: Custom JS for this theme -->
+<?php echo Theme::js('js/custom.js'); ?>
 
 <!-- Load Bludit Plugins: Site head -->
 <?php Theme::plugins('siteHead'); ?>
