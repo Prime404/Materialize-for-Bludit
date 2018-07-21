@@ -14,6 +14,7 @@
 
 <ul class="sidenav" id="mobile-demo">
   <?php foreach ($staticContent as $staticPage) : ?>
+    <li><a href="<?php echo $site->url() ?>">Home</a></li>
     <li><a href="<?php echo $staticPage->permalink() ?>"><?php echo $staticPage->title() ?></a></li>
   <?php endforeach ?>
 </ul>
