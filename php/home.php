@@ -2,7 +2,7 @@
   <!-- Post -->
   <div class='content'>
     <!-- Load Bludit Plugins: Page Begin -->
-    <? php Theme::plugins('pageBegin');  ?>
+    <?php Theme::plugins('pageBegin');  ?>
 
     <div class="card">
       <!-- Cover image -->
